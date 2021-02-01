@@ -48,7 +48,7 @@ def extract_reports(raw_reports):
 def fetch():
     options = ChromeOptions()
     options.add_argument('headless')
-    driver = Chrome(options=options)
+    driver = Chrome(executable_path = "/Users/tuanthanhtran/Desktop/training/bug-bounty/hackerone-reports/chromedriver",options=options)
 
     reports = []
     with open('data.csv', 'r', newline='', encoding='utf-8') as file:
